@@ -1,0 +1,181 @@
+/* ==========================================
+   1. REGLAS GENERALES Y FONDO DE LA PANTALLA
+   ========================================== */
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    /* Imagen de fondo geométrica obligatoria de la cátedra */
+    background-image: url('../img/fondo.png'); 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-size: cover; 
+    background-attachment: fixed; /* Mantiene los rombos quietos al hacer scroll */
+}
+
+
+.contenedor-principal {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    
+    
+    background-color: rgba(20, 22, 25, 0.75); 
+    
+  
+    backdrop-filter: blur(16px); 
+    -webkit-backdrop-filter: blur(16px);
+    
+   
+    padding: 3rem 2rem;
+    box-sizing: border-box;
+}
+
+header {
+    max-width: 900px;
+    margin: 0 auto 2.5rem auto;
+    text-align: center;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+header h1 {
+    color: #ff9f43; 
+    font-size: 2.8rem;
+    margin: 0 0 0.5rem 0;
+}
+
+header p {
+    color: #b0b0b0;
+    font-size: 1.1rem;
+    font-style: italic;
+    margin: 0;
+}
+
+
+nav {
+    max-width: 900px;
+    margin: 0 auto 3rem auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav a{
+    color: #f5f5f5;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover, nav a.activo {
+    color: #ff9f43;
+    border-bottom: 2px solid #ff9f43;
+}
+
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+main section {
+    background: transparent!important;
+    background-color: transparent!important;
+    margin-bottom: 3rem;
+}
+
+main h2 {
+    color: #ff9f43;
+    font-size: 1.8rem;
+    margin-top: 0;
+    margin-bottom: 1.2rem;
+}
+
+
+main p {
+    color: #f5f5f5; /* Blanco hueso de alto contraste */
+    line-height: 1.8; /* Interlineado generoso para descanso visual */
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+}
+.blanco {
+     color: #f5f5f5; /* Blanco hueso de alto contraste */
+    line-height: 1.8; /* Interlineado generoso para descanso visual */
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem
+}
+/* Cita destacada */
+.cita-artista {
+    background-color: rgba(255, 255, 255, 0.03);
+    border-left: 4px solid #ff9f43;
+    padding: 1.5rem;
+    margin: 0 auto 2.5rem auto;
+    font-style: italic;
+}
+
+.cita-artista p {
+    margin: 0 0 0.5rem 0;
+}
+
+/* Vía de contacto por correo electrónico */
+.seccion-contacto a, .enlace-correo {
+    color: #ff9f43;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.seccion-contacto a:hover, .enlace-correo:hover {
+    text-decoration: underline;
+}
+
+/* ==========================================
+   4. MULTIMEDIA Y PIE DE PÁGINA
+   ========================================== */
+
+/* Imagen adaptable */
+.foto-parcial {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 2rem auto;
+    border-radius: 8px;
+}
+
+/* Contenedor del video de YouTube */
+.contenedor-video {
+    position: relative;
+    padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    margin: 2rem 0;
+    border-radius: 8px;
+}
+
+.contenedor-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Elementos de listas */
+ul {
+    color: #f5f5f5;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
